@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Simple Booklist </title>
+</head>
+<body>
+    <header>
+        <h1>Simple Booklist</h1>
+    </header>
+    <div class="container">
+        <form id="book-form">
+            <div class="container-1 form-input">
+                <h3>Title</h3>
+                <input type="text" class="title skip">
+                <h3>Author</h3>
+                <input type="text" class="author skip">
+                <h3>Category</h3>
+                <input type="text" class="category skip">
+            </div>
+            <div class="container-2 form-date">
+                <div>
+                    <h3>Start Date</h3>
+                    <input type="date" class="start-date skip" >
+                </div>
+                <div>
+                    <h3>End Date</h3>
+                    <input type="date" class="end-date skip">
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn add-book">Add Book</button>
+            </div>
+        </form>
+    </div>
+    <div class="container list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="booklist"></tbody>
+        </table>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
